@@ -1,0 +1,20 @@
+{% extends "core/base.html"  %} 
+
+{% block titulo %}
+    BUSQUEDAA
+{% endblock titulo %}
+
+{% block contenido %} 
+
+    <h2> Nombre de clientes </h2>
+    {% for i in cliente_nombre %}       
+        <p>{{ i }}</p>       
+    {% endfor %}
+
+
+    <h2>Cliente nacimiento</h2>
+    {% for i in cliente_nacimiento %}
+        <p>{{ i }}</p>
+    {% endfor %}
+
+{% endblock contenido %}
